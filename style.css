@@ -1,0 +1,131 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Pozicionálás */
+
+.profile-card {
+  width: 550px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content:right;
+  background: url('http://i.imgur.com/9kh3G8L.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.head, .links {
+  text-align: center;
+}
+.head, .content {
+  width: 80%;
+  margin:0 auto;
+  text-align: center;
+  color:midnightblue;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: #666;
+  filter: grayscale(50%);
+  transition: all 0.5s ease-in-out;
+}
+.profile-image {
+  margin-top: 60px;
+}
+
+/* Contact links */
+
+ul {
+  list-style-type:none;
+}
+
+li {
+  display: inline;
+}
+.head, .about {
+  margin-bottom: 5%;
+}
+
+.content {
+  padding: 10% 10%;
+}
+body {
+  background: url('https://images2.alphacoders.com/734/thumb-1920-734981.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+img {
+  padding: 1px;
+  background-color: #666;
+  filter: grayscale(50%);
+}
+.content {
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(80%);
+}
+.p {
+  text-align: center;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #d455ee;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background:#666;
+  color:aliceblue;
+}
+a.external[target="_blank"]::after {
+  content: url(https://github.com/Cinti95);
+  margin: 0px 3px 0px 5px;
+}
+a.external[target="_blank"]::after {
+  content: url(https://www.facebook.com/budai.cintia/);
+  margin: 0px 3px 0px 5px;
+}
+a.external[target="_blank"]::after {
+  content: url(https://www.instagram.com/budai.cintia/);
+  margin: 0px 3px 0px 5px;
+}
